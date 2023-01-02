@@ -14,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('comics');
+   //db(nome_del_file).comics(chiave_dell'array)
+   //dd(config('db.comics'));
+   $comics = config('db.comics');
+   //aggiungo compact al return per accedere alla variabile
+    return view('comics', compact('comics'));
 })->name('comics');
 
 Route::get('/characters', function () {
