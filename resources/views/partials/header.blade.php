@@ -17,31 +17,31 @@
             <nav class="navbar navbar-expand-sm navbar-light">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">characters<span class="sr-only"></span></a>
+                        <a class="nav-link {{ Route::currentRouteName() === 'characters' ? 'bg-primary text-dark' : ''}}" href="{{ route('characters') }}">characters<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link px-3 text-primary" href="#">comics</a>
+                        <a class="nav-link px-3 {{ Route::currentRouteName() === 'comics' ? 'bg-primary text-dark' : ''}}" href="{{ route('comics') }}">comics</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-3" href="#">movies</a>
+                        <a class="nav-link px-3 {{ Route::currentRouteName() === 'movies' ? 'bg-primary text-dark' : ''}}" href="{{ route('movies') }}">movies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-3" href="#">tv</a>
+                        <a class="nav-link px-3 {{ Route::currentRouteName() === 'tv' ? 'bg-primary text-dark' : ''}}" href="{{ route('tv') }}">tv</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-3" href="#">games</a>
+                        <a class="nav-link px-3 {{ Route::currentRouteName() === 'games' ? 'bg-primary text-dark' : ''}}" href="{{ route('games') }}">games</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-3" href="#">collectibles</a>
+                        <a class="nav-link px-3 {{ Route::currentRouteName() === 'collectibles' ? 'bg-primary text-dark' : ''}}" href="{{ route('collectibles') }}">collectibles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-3" href="#">videos</a>
+                        <a class="nav-link px-3 {{ Route::currentRouteName() === 'videos' ? 'bg-primary text-dark' : ''}}" href="{{ route('videos') }}">videos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-3" href="#">fan</a>
+                        <a class="nav-link px-3 {{ Route::currentRouteName() === 'fan' ? 'bg-primary text-dark' : ''}}" href="{{ route('fan') }}">fan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-3" href="#">shop <span class="text-primary">▼</span></a>
+                        <a class="nav-link px-3 {{ Route::currentRouteName() === 'shop' ? 'bg-primary text-dark' : ''}}" href="{{ route('shop') }}">shop <span class="text-primary">▼</span></a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -53,8 +53,7 @@
 
     <!-- hjumbotron -->
     <div class="jumbotron">
-        
+
     </div>
 
 </header>
-
